@@ -21,55 +21,77 @@ body {
     background-attachment: fixed;
 }
 
+/* =========================
+   MAIN CONTAINER (FINAL)
+========================= */
 .container {
     max-width: 700px;
     margin: auto;
-    background: rgba(75,75,75,0.9); /* 👈 lowered opacity */
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.78); /* light glass */
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
     overflow: hidden;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
 }
 
-
+/* =========================
+   HEADER
+========================= */
 .header {
     background: #E2852E;
     color: #222222;
-    padding: 20px;
+    padding: 22px;
     text-align: center;
 }
 
 .header h1 {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
+/* =========================
+   CONTENT
+========================= */
 .content {
-    padding: 20px;
+    padding: 22px;
 }
 
 label {
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 600;
+    margin-top: 12px;
     display: block;
+    color: #222;
 }
 
+/* =========================
+   FORM ELEMENTS
+========================= */
 select {
     width: 100%;
     padding: 12px;
-    margin-top: 5px;
-    border-radius: 8px;
+    margin-top: 6px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background: #ffffff;
 }
 
+select:disabled {
+    background: #eaeaea;
+    color: #777;
+}
+
+/* =========================
+   BUTTON
+========================= */
 button {
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 16px;
+    padding: 11px 22px;
     background-color: #111;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -78,20 +100,23 @@ button:hover {
     background-color: #333;
 }
 
+/* =========================
+   PARTS GRID
+========================= */
 .parts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .part-card {
     background: #F6CE71;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 12px;
+    padding: 16px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    border: 2px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    border: 1px solid #d6b85a;
     min-height: 80px;
     display: flex;
     align-items: center;
@@ -100,19 +125,22 @@ button:hover {
 }
 
 .part-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     color: #333;
-    border-bottom: 1px solid #aaa;
-    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 6px;
     width: 100%;
     text-align: center;
 }
 
+/* =========================
+   NOTE
+========================= */
 .note {
     font-size: 12px;
-    color: #222222;
-    margin: 20px;
+    color: #444;
+    margin: 18px;
     text-align: center;
 }
 </style>
@@ -291,6 +319,7 @@ refreshBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
